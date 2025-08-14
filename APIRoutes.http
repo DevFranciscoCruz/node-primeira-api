@@ -8,4 +8,7 @@ GET http://localhost:3000/courses/1
 POST http://localhost:3000/courses
 Content-Type: application/json
 
-{"name": "Novo Curso"}
+{"title": "Novo Curso"}
+
+### Apagar Cursos por ID
+DELETE http://localhost:3000/courses/c8da785e-693a-4396-affb-64c2dce83b3f
