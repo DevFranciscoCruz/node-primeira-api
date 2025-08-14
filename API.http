@@ -1,0 +1,11 @@
+### Listagem Cursos
+GET http://localhost:3000/courses
+
+### Listagem Cursos por ID
+GET http://localhost:3000/courses/1
+
+### Criação de Curso
+POST http://localhost:3000/courses
+Content-Type: application/json
+
+{"name": "Novo Curso"}
