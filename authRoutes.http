@@ -1,0 +1,8 @@
+### Create a new course
+POST http://localhost:3000/session
+Content-Type: application/json
+
+{
+ "email": "Laron.Koss@gmail.com",
+ "password": "F_vaq3xAFYY7daN"
+}

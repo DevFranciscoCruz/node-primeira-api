@@ -3,6 +3,7 @@ import { z } from 'zod'
 const envSchema = z.object({
   NODE_ENV: z.enum(['development', 'test', 'production']).default('production'),
   DATABASE_URL: z.string(),
+  JWT_SECRET: z.string().min(32, { error: 'JWT SECRET need to have 32 characters at least.' }),
   PORT: z.number().default(3000)
 })
 

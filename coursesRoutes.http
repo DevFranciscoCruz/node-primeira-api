@@ -1,0 +1,57 @@
+### List all courses
+GET http://localhost:3000/courses
+
+###
+
+### List all courses with search parameter
+GET http://localhost:3000/courses?search=React
+
+###
+
+### List all courses with orderBy parameter
+GET http://localhost:3000/courses?orderBy=title
+
+###
+
+### List all courses with page parameter
+GET http://localhost:3000/courses?page=1
+###
+
+### List all courses with query parameters
+GET http://localhost:3000/courses?search=React&orderBy=title
+
+###
+
+### Create a new course
+POST http://localhost:3000/courses
+Content-Type: application/json
+
+{
+ "title": "New Course from .http file"
+}
+
+###
+
+### Get course by ID
+GET http://localhost:3000/courses/d22d3e8e-d487-4c1a-8ad2-0f2c43764646
+
+###
+
+### Update a course by ID
+PUT http://localhost:3000/courses/d22d3e8e-d487-4c1a-8ad2-0f2c43764646
+Content-Type: application/json
+
+{
+  "title": "Updated Course Title",
+  "description": "Updated course description"
+}
+
+###
+
+### Update a course by ID
+PATCH http://localhost:3000/courses/d22d3e8e-d487-4c1a-8ad2-0f2c43764646
+Content-Type: application/json
+
+{
+  "description": "Updated course description field"
+}
